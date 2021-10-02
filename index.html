@@ -6,8 +6,6 @@
          <!-- link style sheet -->
          <link rel="stylesheet" href="assets/css/style.css" />
         <title>Run Buddy</title>
-       
-
     </head>
     <body>
         <header>
@@ -37,9 +35,41 @@
             </nav>
         </header>
 
-<!--hero/jumbotron -->
-<section>
+<!--hero/jumbotron add class="hero" for css-->
+<section class="hero">
+    <div class="hero-form">
+<!-- needs to read more about headings To aid accessibility, headings should fall in sequential order; this helps screen readers interpret the relative importance of content on the page -->
+        <h3>Get Started Today</h3>
+        <p>Fill out this form and one of our trainers will scheudle a consult</p>
+    <!-- add a form element -->
+        <form>
+            <!-- The <label> text not only offers a visual directive of what to enter but also programmatically links to the associated <input>. -->
+            <label for="name">Enter Full Name:</label>
+            <!-- This is known as a self-closing tag and is a common sight in HTML. Some elements, like <input>, don't contain any content or child elements, so the closing tag immediately follows the opening tag. Thus this shortcut was created to self-close the opening tag. -->
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+            <label for="email">Enter email address:</label>
+            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" >
+            <label for="phone">Enter a telephone number:</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" >
+            <!-- does it matter to swith the order of <input> and <laber> the answer is yes! this will switch the order of the label and the clickable button(radio)-->
+            <p>
+                Have you worked out with a trainer before?
+            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+            <label for="trainer-yes">Yes</label>
+            <input type="radio" name="trainer-confirm" id="trainer-no" />
+            <label for="trainer-no">No</label>
+            </p>
+            <P>
+             <label for="checkbox" >I acknowledge that I am at elast 18 years of age.</label>
+             <input type="checkbox" name="age-confirm" id="checkbox" />
+            </P>
+            <button type="submit">
+                Get running!
+            </button>
+        </form>
+    </div>
 </section>
+<!-- end of hero -->
 
 <!--"what we do" section-->
 <section>
@@ -57,7 +87,15 @@
 </section>
 
 <footer>
-            <h2> ❤️ Made with love by Run Buddy</h2>
+    <h2> ❤️ Made with love by Run Buddy</h2>
+    <!-- the <div> container places the privacy and copy right in one container -->
+    <div>
+        <!-- adding a placeholder link in the footer to the privacy policy. -->
+        <a href="#">Read Our Privacy Policy</a><br />
+        <!-- <br /> is to create a new line. because <a> element is inline, have to create new line manually -->
+        <!-- &copy is a preceding code, it creates a little copyright symb it can't be &Copy has to be small letter -->
+        &copy; 2019 Run Buddy, Inc.
+    </div>
 </footer>
     </body>
 

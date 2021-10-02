@@ -3,11 +3,13 @@
 *{
     margin: 0;
     padding: 0;
+/* without this property, the footer will not display properly. because the we had declared the footer takes up 100% width and 35 px on right and left. therefore the footer is 70px wider than the actual screen. */
+ /* box sizing border box calculate the height and width including the border and padding in addidions to the content of the box.   */
+    box-sizing: border-box;
 }
 /* start off CSCS with a few styles that apply to the whole page. */
 body{
     font-family: Helvetica, Arial, sans-serif;
-    background-color: tomato;
     color:#39a6b2;
 }
 /* apply style to <header>, which is a child element to <body> */
@@ -45,4 +47,75 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+footer{
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    float: right;
+    /* line-height assings how much vertical space there is. 1.5 times the font size here  */
+    line-height: 1.5;
+    /* text-align align the text... */
+    text-align: right;
+}
+footer a {
+    color:#024e76
+}
+/* applying the background image to only hero class */
+.hero{
+    /* note that it has to be ../images/XXX not ../assets/images */
+    background-image: url("../images/hero-bg.jpeg");
+    height: 600px;
+    padding: 60px;
+    /* background-size set the size of image to fit the available space. set it to "cover" to shrink so it won't get clipped. */
+    background-size: cover;
+    background-position:center;
+    /* To do this, go to the CSS rule for the hero and add a declaration that sets the position to relative. Why????? */
+    position: relative;
+}
+.hero-form{
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: solid 3px #024e76;
+    /* by default the absolute position is set to <body>but not <hero section> To enable the absolute positioning of the form container to be taken relative to the hero section, we need to make the hero section's position relative.why??? */
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+h3{
+    font-size: 24px;
+    margin: 0px;
+}
+.hero-form p{
+    margin: 5px 0 15px 0;
+}
+
+.form-input{
+    border:1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.hero-form label{
+    margin: 0 5px;
+}
+.hero-form button{
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
 }
