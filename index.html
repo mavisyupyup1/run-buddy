@@ -13,7 +13,7 @@
             <h1>
                 <a href="/">Run Buddy</a>
             </h1>
-<!-- nav is a semantic element that describes what is inside them aids seo and accessbiliy -->
+<!-- nav is a semantic element that describes what is inside them aids seo and accessibility -->
             <nav>
 <!-- unordered list element -->
                     <ul>
@@ -40,7 +40,7 @@
     <div class="hero-form">
 <!-- needs to read more about headings To aid accessibility, headings should fall in sequential order; this helps screen readers interpret the relative importance of content on the page -->
         <h3>Get Started Today</h3>
-        <p>Fill out this form and one of our trainers will scheudle a consult</p>
+        <p>Fill out this form and one of our trainers will schedule a consult</p>
     <!-- add a form element -->
         <form>
             <!-- The <label> text not only offers a visual directive of what to enter but also programmatically links to the associated <input>. -->
@@ -51,7 +51,7 @@
             <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" >
             <label for="phone">Enter a telephone number:</label>
             <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" >
-            <!-- does it matter to swith the order of <input> and <laber> the answer is yes! this will switch the order of the label and the clickable button(radio)-->
+            <!-- does it matter to switch the order of <input> and <label> the answer is yes! this will switch the order of the label and the clickable button(radio)-->
             <p>
                 Have you worked out with a trainer before?
             <input type="radio" name="trainer-confirm" id="trainer-yes" />
@@ -60,7 +60,7 @@
             <label for="trainer-no">No</label>
             </p>
             <P>
-             <label for="checkbox" >I acknowledge that I am at elast 18 years of age.</label>
+             <label for="checkbox" >I acknowledge that I am at least 18 years of age.</label>
              <input type="checkbox" name="age-confirm" id="checkbox" />
             </P>
             <button type="submit">
@@ -72,10 +72,10 @@
 <!-- end of hero -->
 
 <!--"what we do" section-->
-<section id="what-we-do">
+<section id="what-we-do" class="intro">
     <h2>What We Do</h2>
     <p>
-        Let's fill in the missing HTML content per the mock-up. Ignore the blue icons shown in the mock-up for now, but take into consideration which elements would be appropriate to best organize the code.   
+        Let's fill in the missing HTML content per the mock-up. Ignore the blue icons shown in the mock-up for now, but take into consideration which elements would be appropriate to best organize the code.lorem   If you ever need to quickly fill an HTML element with dummy text in VS Code, type the word "lorem" and press Tab. Many other dummy text generators are available online. not wotking                
     </p>
 </section>
 
@@ -86,7 +86,7 @@
         <!-- insert this img element.the picture is decorative and did not provide info so alt is not necessary (alt provides alternative text for screen reader) but it is still important to set all to "" so the screen reader knows to ignore it-->
         <img src="./assets/images/step-1.svg" alt="" />
         <h3>Step 1: Fill Out the Form Above </h3>
-        <p>You're aleady here, so why not?</p>
+        <p>You're already here, so why not?</p>
     </div>
     <div>
         <img src="./assets/images/step-2.svg" alt="">
@@ -101,7 +101,7 @@
     <div>
         <img src="assets/images/step-4.svg" alt="">
         <h3>Step 4: See Results</h3>
-        <p>Bi-weekly checkins with your trainer will keep you focused</p>
+        <p>Bi-weekly check-ins with your trainer will keep you focused</p>
     </div>
 </section>
 
@@ -117,7 +117,7 @@
         <!-- adding a placeholder link in the footer to the privacy policy. -->
         <a href="#">Read Our Privacy Policy</a><br />
         <!-- <br /> is to create a new line. because <a> element is inline, have to create new line manually -->
-        <!-- &copy is a preceding code, it creates a little copyright symb it can't be &Copy has to be small letter -->
+        <!-- &copy is a preceding code, it creates a little copyright symbol it can't be &Copy has to be small letter -->
         &copy; 2019 Run Buddy, Inc.
     </div>
 </footer>

@@ -119,3 +119,24 @@ h3{
     padding: 10px 20px;
     font-size: 16px;
 }
+.intro{
+    text-align: center;
+}
+.intro h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color: #fce138;
+    /* block elements occupy 100% width of parent element. inline takes only as much as it need. inline-block gets the best of two worlds. */
+    display: inline-block;
+}
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    /* when shrunk width to 80% it no longer looks centered. add margin 0 auto (top and bottom 0, right and left auto) to fix it */
+    width: 80%;
+    margin:0 auto;
+    font-size: 20px;
+}
