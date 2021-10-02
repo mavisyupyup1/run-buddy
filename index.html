@@ -73,43 +73,79 @@
 
 <!--"what we do" section-->
 <section id="what-we-do" class="intro">
-    <h2>What We Do</h2>
+    <h2 class="section-title primary-border">What We Do</h2>
     <p>
-        Let's fill in the missing HTML content per the mock-up. Ignore the blue icons shown in the mock-up for now, but take into consideration which elements would be appropriate to best organize the code.lorem   If you ever need to quickly fill an HTML element with dummy text in VS Code, type the word "lorem" and press Tab. Many other dummy text generators are available online. not wotking                
+        Let's fill in the missing HTML content per the mock-up. Ignore the blue icons shown in the mock-up for now, but take into consideration which elements would be appropriate to best organize the code.lorem   If you ever need to quickly fill an HTML element with dummy text in VS Code, type the word "lorem" and press Tab. Many other dummy text generators are available online. not working....              
     </p>
 </section>
 
 <!--"meet the trainers"section-->
-<section id="what-you-do">
-    <h2>What You Do</h2>
+<section id="what-you-do" class="steps">
+    <h2 class="section-title secondary-border">What You Do</h2>
     <div>
         <!-- insert this img element.the picture is decorative and did not provide info so alt is not necessary (alt provides alternative text for screen reader) but it is still important to set all to "" so the screen reader knows to ignore it-->
+        <!-- adding inline element <span> so can make the text smaller than "Step 1" -->
         <img src="./assets/images/step-1.svg" alt="" />
-        <h3>Step 1: Fill Out the Form Above </h3>
+        <h3>Step 1: <span>Fill Out the Form Above</span> </h3>
         <p>You're already here, so why not?</p>
     </div>
     <div>
         <img src="./assets/images/step-2.svg" alt="">
-        <h3>Step2: Consult with One of Our Trainers</h3>
+        <h3>Step2: <span>Consult with One of Our Trainers</span></h3>
         <p>Are you here to build muscle, lose weight, or just feel good?</p>
     </div>
     <div>
         <img src="assets/images/step-3.svg" alt="">
-        <h3>Step 3: Get Running.</h3>
+        <h3>Step 3:<span> Get Running.</span></h3>
         <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
     </div>
     <div>
         <img src="assets/images/step-4.svg" alt="">
-        <h3>Step 4: See Results</h3>
+        <h3><span>Step 4: See Results</span></h3>
         <p>Bi-weekly check-ins with your trainer will keep you focused</p>
     </div>
 </section>
 
 <!--"meet the trainers" section-->
-<section>
+<section id="your-trainers" class="trainers">
+    <h2 class="section-title primary-border">Meet the Trainers</h2>
+    <!-- article class is trainer not trainers -->
+    <article class="trainer">
+        <img src="assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+        <div class="trainer-bio text-left">
+            <h3>Arron Stephens</h3>
+            <h4>Speed / Strength</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate eveniet odit, placeat labore deserunt quo deleniti cum? Fugiat, ipsam, molestias explicabo labore error corrupti saepe quia culpa debitis temporibus et?
+            </p>
+        </div>
+    </article>
+    <!-- second trainer bio -->
+    <article class="trainer">
+        <div class="trainer-bio text-right">
+            <h3>Joanna Gill</h3>
+            <h4>Endurance</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, harum possimus voluptatibus veniam ipsum consequuntur ipsam deleniti alias et debitis dolores iste voluptatum quis, animi optio obcaecati accusantium fuga at!
+            </p>
+        </div>
+        <img src="assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+    </article>
+    <!-- third trainer bio -->
+    <article class="trainer">
+        <img src="assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+        <div class="trainer-bio text left">
+            <h3>Harry "The Headband" Smith</h3>
+            <h4>Strength</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, commodi et, ullam ea molestiae saepe dolores ducimus modi, facilis possimus veritatis? Dicta, reprehenderit totam fugiat incidunt adipisci sapiente provident repudiandae?
+            </p>
+        </div>
+    </article>
+</section>
+<section id="reach-out">
     <h2>Reach Out</h2>
 </section>
-
 <footer>
     <h2> ❤️ Made with love by Run Buddy</h2>
     <!-- the <div> container places the privacy and copy right in one container -->
