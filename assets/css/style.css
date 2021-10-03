@@ -74,7 +74,6 @@ footer a {
     /* note that it has to be ../images/XXX not ../assets/images */
     background-image: url("../images/hero-bg.jpeg");
     height: 600px;
-    padding: 60px;
     /* background-size set the size of image to fit the available space. set it to "cover" to shrink so it won't get clipped. */
     background-size: cover;
     background-position:center;
@@ -157,24 +156,6 @@ h3{
     border-color: #39a6b2;
 } */
 
-
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 50px solid #fce138;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
 .steps div{
     margin-bottom: 80px;
 }
@@ -195,6 +176,24 @@ h3{
 .steps span{
     font-size: 38px;
 }
+
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 50px solid;
+  }
+  
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+  
 .trainers{
     text-align: center;
 }
@@ -266,7 +265,8 @@ h3{
     color:#fce138;
     font-size: 32px;
 }
-.contact-info p, .contact-info address{
+.contact-info p, 
+.contact-info address{
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
@@ -274,4 +274,4 @@ h3{
 }
 .contact-info a{
     color: #fce138;
-}
+}s

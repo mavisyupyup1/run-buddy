@@ -1,9 +1,10 @@
 .hero{
-    background-position:top;
+    background-position: bottom;
     height: auto;
     text-align: center;
     margin-bottom: 40px;
 }
+
 .page-title{
     color:#fce138;
     display: inline-block;
@@ -13,6 +14,7 @@
     font-size: 42px;
     font-style: italic;
 }
+
 .secondary-content{
     width: 80%;
     margin: auto;
