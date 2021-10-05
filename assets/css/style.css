@@ -55,15 +55,16 @@ footer{
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer h2{
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 footer div {
-    float: right;
     /* line-height assings how much vertical space there is. 1.5 times the font size here  */
     line-height: 1.5;
     /* text-align align the text... */
@@ -76,25 +77,22 @@ footer a {
 .hero{
     /* note that it has to be ../images/XXX not ../assets/images */
     background-image: url("../images/hero-bg.jpeg");
-    height: 600px;
     /* background-size set the size of image to fit the available space. set it to "cover" to shrink so it won't get clipped. */
     background-size: cover;
     background-position:center;
     /* To do this, go to the CSS rule for the hero and add a declaration that sets the position to relative. Why????? */
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
 
 .hero-form{
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border: solid 3px #024e76;
-    /* by default the absolute position is set to <body>but not <hero section> To enable the absolute positioning of the form container to be taken relative to the hero section, we need to make the hero section's position relative.why??? */
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 h3{
     font-size: 24px;
@@ -103,7 +101,19 @@ h3{
 .hero-form p{
     margin: 5px 0 15px 0;
 }
-
+.hero-cta{
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color:#fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.hero-cta h2{
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
 .form-input{
     border:1px solid #024e76;
     display: block;
