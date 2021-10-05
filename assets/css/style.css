@@ -133,69 +133,14 @@ h3{
     padding: 10px 20px;
     font-size: 16px;
 }
-.intro{
-    text-align: center;
-}
-/* .intro h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-    /* block elements occupy 100% width of parent element. inline takes only as much as it need. inline-block gets the best of two worlds. */
-    /* display: inline-block;
-} */ 
 
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    /* when shrunk width to 80% it no longer looks centered. add margin 0 auto (top and bottom 0, right and left auto) to fix it */
-    width: 80%;
-    margin:0 auto;
-    font-size: 20px;
-}
-/* good css practice to keep styling of one section together but .intro h2 and .step h2 (now both comment out) are almost identical except boarder color. in programming we want to cut down duplicate code as much as possible so instead of style .intro h2 and .step h2, i can give a new class to both h2 and style that. */
-.steps {
-    text-align: center;
-    background: #fce138;
-}
-/* .steps h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
-} */
-
-.steps div{
-    margin-bottom: 80px;
-}
-/* img is center because the parent element (steps) has text-align:center. this applies to text or otherwise. but to use this to center the img, use it in the parent element, not the img element itself. */
-.steps img{
-    width: 15%;
-    margin: 10px 0;
-}
-.steps h3{
-    color: #024e76;
-    font-size: 46px;
-    margin-top: 10px;
-}
-.steps p{
-    color: #39a6b2;
-    font-size: 23px;
-}
-.steps span{
-    font-size: 38px;
-}
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
   
 .primary-border {
@@ -206,8 +151,61 @@ h3{
     border-color: #39a6b2;
   }
   
-.trainers{
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    /* when shrunk width to 80% it no longer looks centered. add margin 0 auto (top and bottom 0, right and left auto) to fix it */
+    width: 80%;
+    margin:0 auto;
+    font-size: 20px;
     text-align: center;
+}
+/* good css practice to keep styling of one section together but .intro h2 and .step h2 (now both comment out) are almost identical except boarder color. in programming we want to cut down duplicate code as much as possible so instead of style .intro h2 and .step h2, i can give a new class to both h2 and style that. */
+.steps {
+    background: #fce138;
+}
+.step{
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.step h3{
+    color: #024e76;
+    font-size: 46px;
+    flex: 1 30%;
+}
+.step-info{
+    flex:2, 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.step-img{
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img{
+    max-width: 100%;
+}
+.step-text{
+    flex: 12;
+}
+
+.step-text p{
+    color: #39a6b2;
+    font-size: 18px;
+}
+
+.step-text h4{
+    font-size: 26px;
+    line-height: 1.5;
+    color:#024e76;
 }
 .trainer{
     width: 900px;
@@ -225,12 +223,7 @@ h3{
     float: left;
     width: 65%;
 }
-.text-left{
-    text-align: left;
-}
-.text-right {
-    text-align: right;
-}
+
 .trainer-bio h3{
     font-size: 32px;
     margin-bottom: 8px;
@@ -247,7 +240,6 @@ h3{
 
 /* reach out styles styles starts */
 .contact{
-    text-align: center;
     background: #024e76;
 }
 .contact h2{
@@ -279,4 +271,15 @@ h3{
 }
 .contact-info a{
     color: #fce138;
-}s
+}
+
+.text-left{
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.flex-row{
+    display: flex;
+}
