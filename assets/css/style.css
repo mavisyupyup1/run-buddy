@@ -1,21 +1,21 @@
 /* tell every element on the page to have no margin or padding unless explicitly told. this is to remove browswer default styling  */
 /* * is an universal selector */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 /* without this property, the footer will not display properly. because the we had declared the footer takes up 100% width and 35 px on right and left. therefore the footer is 70px wider than the actual screen. */
  /* box sizing border box calculate the height and width including the border and padding in addidions to the content of the box.   */
-    box-sizing: border-box;
+
 }
 /* start off CSCS with a few styles that apply to the whole page. */
 body{
-    font-family: Helvetica, Arial, sans-serif;
     color:#39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+
 }
 /* apply style to <header>, which is a child element to <body> */
 header{
-    /* padding is a kind of spacing around its contents. i.e. arould all text it contains.  */
-    /* apply 20px to top and bottom then 35px to left and right */
     padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
@@ -65,25 +65,25 @@ footer h2{
     margin: 0;
 }
 footer div {
-    /* line-height assings how much vertical space there is. 1.5 times the font size here  */
     line-height: 1.5;
-    /* text-align align the text... */
     text-align: right;
 }
 footer a {
     color:#024e76
 }
+section{
+    padding: 60px;
+}
 /* applying the background image to only hero class */
-.hero{
-    /* note that it has to be ../images/XXX not ../assets/images */
-    background-image: url("../images/hero-bg.jpeg");
-    /* background-size set the size of image to fit the available space. set it to "cover" to shrink so it won't get clipped. */
+.hero {
+    background-image: url('/assets/images/hero-bg.jpg');
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+  }
+  
 .hero-cta{
     width: 35%;
     text-align: right;
@@ -99,10 +99,10 @@ footer a {
     color: #fce138;
 }
 .hero-form{
+    border: solid 3px #024e76;
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    border: solid 3px #024e76;
     width: 40%;
     margin: 3.5%;
 }
@@ -143,7 +143,6 @@ footer a {
     margin: 0 auto 35px auto;
     width: 50%;
   }
-  
 .primary-border {
     border-color: #fce138;
   }
@@ -181,7 +180,7 @@ footer a {
     flex: 1 30%;
 }
 .step-info{
-    flex:2, 70%;
+    flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -268,8 +267,7 @@ footer a {
     color:#fce138;
     font-size: 32px;
 }
-.contact-info p, 
-.contact-info address{
+.contact-info p, .contact-info address{
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
