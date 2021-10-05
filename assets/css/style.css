@@ -18,6 +18,9 @@ header{
     /* apply 20px to top and bottom then 35px to left and right */
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* implementing a more specific selector pattern. ensuring only the <h1> element inside the <header> gets this style. */
 header h1{
@@ -25,8 +28,6 @@ header h1{
     font-size: 36px;
     color: #fce138;
     margin:0;
-    /* add inline property so <h1> does not take up more space than needs to  */
-    display: inline;
 }
 header a{
     /* text-decoration applies underline, strikethrough and overline and by default is it none. however with <a> elements, however, the browser automatically applies a blue color and an underline, and we don't want the links to look like that.*/
@@ -35,7 +36,6 @@ header a{
 }
 /* the float property takes an element that occupy 100% of its parent width by defualt (aka blcok element) and pushes everything that follows below it. */
 header nav {
-    float: right;
     margin: 7px 0;
 }
 /* to make the navigation bar links line up horizotally, changes display from block to inline */
